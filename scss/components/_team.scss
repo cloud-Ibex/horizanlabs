@@ -1,0 +1,107 @@
+.dlab-team{
+	&.style-1{
+		.dlab-social-icon{
+			display: flex;
+			li{
+				margin: 2px;
+			}
+		}
+		.dlab-content{
+			box-shadow: 0px 5px 10px rgba(31, 66, 135, 0.1);
+			border-radius: 10px;
+			padding: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: -60px;
+			z-index: 99;
+			background-color: $white;
+			margin-left: 30px;
+			position: relative;
+		}
+		.dlab-name{
+			margin-bottom: 3px;
+		}
+		.dlab-position{
+		    text-transform: uppercase;
+			font-size: 13px;
+		}
+		.dlab-media{
+			box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.1);
+			border-radius: 10px;
+			margin-right: 30px;
+		}
+		@include respond('phone'){
+			.dlab-content{
+				padding: 20px;
+				margin-left: 20px;
+				margin-top: -50px;
+			}
+			.dlab-media{
+				margin-right: 20px;
+			}
+		}
+	}
+	
+	&.style-2{
+		
+		.dlab-media{
+			border-radius: 50px 0 50px 50px;
+			@include transitionMedium;
+		}
+		&:hover .dlab-media{
+			border-radius: 50px 50px 50px 0px;
+		}
+		.dlab-content{
+			padding: 20px;
+			text-align: center;
+		}
+		.dlab-position{
+			font-size: 14px;
+		}
+		.dlab-name{
+			margin-bottom: 5px;
+		}
+	}
+	
+	&.style-3{
+		.dlab-media{
+			box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.1);
+			border-radius: 10px;
+		}
+		.overlay-content{
+			position: absolute;
+			background-color: rgba($primary,0.7);
+			top: 50%;
+			width: 100%;
+			height: 100%;
+			transform: translateY(-50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: all 0.5s;
+		}
+		.dlab-content{
+			padding-top: 15px;
+		}
+		.dlab-position{
+			font-size: 15px;
+		}
+		.dlab-name{
+			margin-bottom: 5px;
+			transition: all 0.5s;
+		}
+		&:hover{	
+			.overlay-content{
+				transition: all 0.5s;
+				opacity: 1;
+			}
+			.dlab-name{
+				a{
+					color: $primary;
+				}
+			}
+		}
+	}
+}

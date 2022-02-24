@@ -1,0 +1,51 @@
+.site-footer {
+    &.style-2 {
+        background-repeat  : no-repeat;
+        background-position: center;
+        position           : relative;
+        height             : auto !important;
+        background-color   : #0e1b1f;
+        background-size    : contain;
+
+        &:before {
+            content            : "";
+            background-image   : url(../public/images/pattern/pattern2.png);
+            background-position: left top;
+            background-repeat  : no-repeat;
+            background-size    : contain;
+            position           : absolute;
+            top                : 0;
+            left               : 0;
+            width              : 100%;
+            height             : 100%;
+        }
+
+        .footer-top {
+            background : transparent;
+            padding-top: 300px;
+
+            .widget_services {
+                padding-left: 100px;
+            }
+        }
+
+        .container+ {
+            .footer-top {
+                padding-top: 70px;
+            }
+        }
+
+        .footer-bottom {
+            background-color: #1f343b;
+            padding         : 10px 0;
+        }
+
+        @include respond('tab-land') {
+            .footer-top {
+                .widget_services {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+/* Coming Soon */
+.countdown{
+	margin-bottom:40px;
+	.date{
+		width: 120px;
+		display: inline-block;
+		color: $black;
+		padding: 0 10px;
+		position: relative;
+		&:after{
+			content: ":";
+			position: absolute;
+			font-size: 50px;
+			right: -8px;
+			top: 2px;
+			line-height: 60px;
+			color: $white;
+		}
+		&:last-child:after{
+			content:none;
+		}
+		span:last-child{
+			color: $white;
+			height: auto;
+			width: auto;
+			display: block;
+			background: transparent;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+		.time{
+			font-size: 70px;
+			color: $white;
+			line-height: 70px;
+			display: block;
+			width: auto;
+			height: auto;
+			background: transparent;
+			margin: 0;
+			font-weight: 600;
+		}
+	}
+	@include respond('phone'){
+		margin-bottom: 20px;
+		.date{
+			width: 75px;
+			padding: 0 5px;
+			&:after {
+				font-size: 36px;
+				line-height: 36px;
+			}
+			span:last-child {
+				font-size: 10px;
+			}
+			.time {
+				font-size: 36px;
+				line-height: 36px;
+			}	
+		}
+	}
+}
+
+.coming-soon{
+	.cs-title{
+		font-size: 50px;
+		color: #fff;
+		font-weight: 500;
+		line-height: 70px;
+		margin-bottom: 15px;
+		opacity: 1;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.cs-logo{
+		margin-bottom: 20px;
+		.logo{
+			width: 250px;
+			display: inline-block;
+		}
+	}
+	@include respond('phone'){
+		.cs-title {
+			font-size: 36px;
+			line-height: 50px;
+		}
+	}
+}
+.countdown-social{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:100%;
+	li{
+		display:inline-block;
+		margin:0 2px;
+		a{
+			width: 50px;
+			height: 50px;
+			background: $white;
+			border-radius: 50px;
+			font-size: 18px;
+			line-height: 50px;
+			color: $black;
+			&:hover{
+				background:$primary;
+				color:$white;
+			}
+		}
+	}
+	@include respond('phone'){
+		li{
+			a {
+				width: 40px;
+				height: 40px;
+				font-size: 14px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+.page-down,
+.coming-soon{
+    height: 100vh;
+    display: table;
+    width: 100%;
+}
+.page-down .container-fluid,
+.coming-soon .container{
+	display: table-cell;
+    vertical-align: middle;
+}
+.pagedown-title{
+	padding-left:165px;
+	position:relative;
+    margin-left: 50px;
+	h1{
+		margin:0;
+		font-family:Roboto;
+		font-weight:500;
+		color:#fff;
+		font-size:70px;
+		line-height:80px;
+		margin-bottom: 15px;	
+	}
+	img{
+		position: absolute;
+		left: -10px;
+		top: 10px;
+		width: 160px;
+	}
+	p{
+		margin:0;
+		font-family:Roboto;
+		font-weight:300;
+		color:$white;
+		font-size:28px;
+		line-height:40px;
+		opacity: 0.8;	
+	}
+	@include respond('tab-port'){
+		h1{
+			font-size:60px;
+		}
+	}
+	@include respond('phone-land'){
+		h1 {
+			font-size: 42px;
+			line-height: 54px;
+		}
+		p {
+			color: $white;
+			font-size: 21px;
+			line-height: 32px;
+		}
+		.pagedown-title img {
+			width: 140px;
+		}
+	}
+	@include respond('phone'){
+		padding-left: 100px;
+		margin-left: 20px;
+		img {
+			width: 90px;
+		}
+		h1 {
+			font-size: 24px;
+			line-height: 34px;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+}

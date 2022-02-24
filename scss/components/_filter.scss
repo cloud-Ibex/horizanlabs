@@ -1,0 +1,190 @@
+// FILTER BUTTONS CSS
+.site-filters {
+    margin-bottom: 30px;
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		padding: 0;
+		margin-bottom:3px;
+		&.btn {
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			outline: none !important;
+		}
+		input {
+			display: none;
+		}
+		a {
+			margin: 0 5px 5px 0;
+		}
+		&.active{
+			[class*="btn"] {
+				color: #fff;
+				background-color: #EFBB20;
+			}
+		}
+	}
+	&.center{
+		text-align: center;
+		ul {
+			display: inline-block;
+			margin: auto;
+		}
+		[class*="btn"] {
+			display: inline-block;
+			margin: 0 5px 10px;
+			text-transform: uppercase;
+			@include respond('phone'){
+				margin: 0 1px 5px;
+				padding: 5px 10px;
+				font-size: 12px;
+			}
+		}
+	}
+}
+// Filter
+.site-filters{
+	&.style-1{
+		background-color: $primary-light;
+		border-radius: 50px;
+		padding: 10px;
+		.filters{
+			justify-content: space-between;
+			display: flex;
+			flex-wrap: wrap;
+			li{
+				margin: 0 5px;
+				padding: 0;
+				a{
+					font-size: 18px;
+					color: $secondary;					
+					padding: 10px 30px;
+					border-radius: 30px;					
+					display: block;
+					margin: 0;
+					text-transform: capitalize;
+				}
+				&.active{
+					a{
+						background-color: $primary;
+						box-shadow: 0 2px 15px rgba($primary,0.5);
+						color: $white;
+					}
+				}
+			}
+		}
+		@include respond('tab-land'){
+			.filters{
+				li{
+					a{
+						font-size: 16px;
+						padding: 10px 25px;
+					}
+				}
+			}
+		}
+		@include respond('tab-port'){
+			.filters{
+				display: block;
+				li{
+					margin: 0;
+					a {
+						font-size: 14px;
+						padding: 8px 18px;
+					}
+				}
+			}
+		}
+		@include respond('phone-land'){
+		}
+		@include respond('phone'){
+			background-color: transparent;
+			padding: 0;
+			.filters{
+				li{
+					margin: 0;
+					a{
+						padding: 8px 20px;
+					}
+				}
+			}
+		}
+	}
+	
+	// style 2
+	&.style-2{
+		.filters{
+			li{
+				margin: 0 20px 10px;
+				a{
+					border-bottom: 3px solid;
+					border-color: transparent;
+					font-size: 18px;
+					color: $secondary;
+					text-transform: capitalize;
+					margin: 0;
+					padding: 0 0 5px;
+				}
+				&.active{
+					a{
+						border-color: $primary;
+						color: $primary;
+					}
+				}
+			}
+		}
+		@include respond('phone'){
+			.filters{
+				li{
+					margin: 0 5px 5px;
+					a{
+						font-size: 14px;
+						border-bottom: 2px;
+					}
+				}
+			}
+		}
+	}
+	
+	// style 2
+	&.style-3{
+		.filters{
+			li{
+				margin: 0 5px 10px;
+				padding: 0;
+				a{
+					font-size: 18px;
+					color: $secondary;
+					text-transform: capitalize;
+					background-color: $primary-light;
+					padding: 10px 30px;
+					border-radius: 30px;
+					display: block;
+					margin: 0 0 10px;
+				}
+				&.active{
+					a{
+						background-image: var(--gradient);
+						background-size:200%;
+						color: $white;
+						box-shadow: 0 2px 15px rgba($primary,0.5);
+					}
+				}
+			}
+		}
+		@include respond('phone-land'){
+			.filters{
+				li{
+					margin: 0;
+					a{
+						font-size: 14px;
+						padding: 8px 24px;
+					}
+				}
+			}
+		}
+	}
+}

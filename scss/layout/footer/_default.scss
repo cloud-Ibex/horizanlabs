@@ -1,0 +1,217 @@
+footer{
+	color:#fff;
+	font-size:15px;
+	.widget{
+		margin-bottom:30px;
+	}	
+	strong{
+		color:#fff;
+	}	
+	.footer-logo{
+		margin-bottom:25px;
+		img{
+			max-width:100%;
+		}
+	}
+	.widget-logo ul{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		
+		li{
+			display:inline-block;
+		    flex: 50%;	
+		    padding: 0 15px 15px 0px;	
+		}
+	}
+	.widget_about{
+		p{
+			margin-bottom:20px;
+			line-height: 24px;
+		}
+	}
+	
+	.footer-title{
+		margin: 0;
+		font-size: 24px;
+		font-weight: 700;
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+		position: relative;
+		color: $white;
+		line-height: 1.2;
+		
+		&:before,
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 4px;
+			border-radius: 20px;
+			background-color: $white;
+		}
+		&:before{
+			width: 15px;
+		}
+		&:after{
+			width: 45px;
+			left: 20px;
+		}
+	}
+	.footer-top{
+		background: $primary;
+		padding: 70px 0 30px;
+		@include respond('phone-land'){
+			padding: 50px 0 20px;
+		}
+	}
+	.footer-bottom{
+		background-color: lighten($primary,10);
+		font-size: 15px;
+		padding: 15px 0;
+		.copyright-text{
+			a{
+				color: $white!important;
+				font-weight: 500;
+			}
+		}
+		@include respond('phone-land'){
+			.text-left,
+			.text-right{
+				text-align: center!important;
+			}
+			.text-right{
+				margin-top: 10px;
+			}
+		}
+	}
+	.widget-link{
+		li{
+			display: inline-block;
+			text-transform: uppercase;
+			margin-left: 20px;
+			@include respond('phone-land'){
+				margin-left: 8px;
+				margin-right: 7px;
+			}
+		}
+		a{
+			color:#fff;
+		}
+	}
+	.widget_services{
+		ul{
+			li{
+				a{
+					position: relative;
+					color: $white;
+					padding: 5px 0 5px 0;
+					display: block;
+					@include transitionMedium;
+					
+					&:hover{
+						padding: 5px 0 5px 10px;
+					}
+				}
+			}
+		}
+		&.style-1{
+			ul{
+				li{
+					a{
+						padding: 5px 0 5px 15px;
+						&:before{
+							content: "\f105";
+							font-family: fontawesome;
+							left: 0;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							color: $white!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.widget_getintuch{
+		ul{
+			li{
+				position: relative;
+				padding: 8px 0;
+				display: flex;
+				align-items: center;
+				i{
+					height: 40px;
+					width: 40px;
+					min-width: 40px;
+					line-height: 40px;
+					margin-right: 10px;
+					text-align: center;
+					background-color: $primary;
+					display: block;
+					border-radius: 50px;
+				}
+			}
+		}
+	}
+}
+.footer-info{
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	.footer-logo {
+		margin-bottom: 10px;
+	}
+	.icon-bx-wraper{
+		display: flex;
+		align-items: center;
+		.icon-cell{
+			color: $white;
+			i{
+				font-size: 50px;
+			}
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+	@include respond('tab-port'){
+		.footer-info{
+			.icon-bx-wraper{
+				p {
+					font-size: 16px;
+				}
+			}
+			.footer-logo {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+.contact-info-bx{
+	li{
+		padding-bottom: 10px;
+		position: relative;
+		padding-left: 30px;
+		padding-top: 2px;
+		
+		strong{
+			font-weight:400;
+		}
+	}
+	i{
+		width: auto;
+		height: 22px;
+		color: #fff;
+		line-height: 26px;
+		text-align: center;
+		border-radius: 30px;
+		margin-right: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 22px;
+	}
+}

@@ -1,0 +1,117 @@
+.btn {
+    padding: 12px 35px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn.btn-lg{
+	padding: 10px 35px;
+    font-size: 16px;
+}
+.btn-light{
+	background-color: $white;
+	&:hover{
+		background-color: $primary;
+		color: $white!important;
+		border-color: transparent;
+	}
+	&.text-primary{
+		&:hover{
+			color: $white!important;
+		}
+	}
+}
+.gradient{
+    background-image: linear-gradient(to right,$primary 0,darken($primary, 10) 51%,$primary 100%);
+    background-size: 200%;
+    border-color: transparent !important;
+    transition: all 0.5s;
+}
+.gradient-sec{
+	background-image: var(--gradient-sec);
+    background-size: 200%;
+	border-color: transparent !important;
+    transition: all 0.5s;
+}
+.btn-link{
+	padding: 0;
+	border:0;
+	i{
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 0px 15px 20px rgba(31, 66, 135, 0.1);
+		font-size: 24px;
+		background-color: $primary;
+		color: $white;
+	}
+	&:hover,
+	&:focus{
+		text-decoration: none;
+	}
+}
+.btn-corner{
+	border-top-left-radius: 0; 
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: $border-radius; 
+	border-top-right-radius: $border-radius;
+	&:hover,
+	&:active,
+	&:focus{
+		border-top-left-radius:  $border-radius; 
+		border-bottom-right-radius:  $border-radius;
+		border-bottom-left-radius: 0; 
+		border-top-right-radius: 0;
+	}
+}
+
+
+.btn-link i{
+	display:inline-block;
+	overflow:hidden;
+}
+.btn-link:hover i:before{
+	display:inline-block;
+	-webkit-animation: toLeftFromRight 0.5s forwards;
+	-moz-animation: toLeftFromRight 0.5s forwards;
+	animation: toLeftFromRight 0.5s forwards;
+}
+@-webkit-keyframes toLeftFromRight {
+	49% {
+		-webkit-transform: translateX(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateX(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toLeftFromRight {
+	49% {
+		-moz-transform: translateX(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateX(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toLeftFromRight {
+	49% {
+		transform: translateX(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}

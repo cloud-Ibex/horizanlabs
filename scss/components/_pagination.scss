@@ -1,0 +1,32 @@
+nav{
+	.pagination{
+		.page-item{
+			margin: 0 5px;
+			.page-link{
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				border-radius: 50px;
+				background-color: $primary-light;
+				color: $secondary;
+				text-align: center;
+				border: 0;
+				padding: 0;
+				transition: all 0.5s;
+				&.prev,
+				&.next{
+					width: 80px;
+				}
+				&.active,
+				&:hover{
+					background-image: var(--gradient);
+					background-size: 200%;
+					color: $white;
+				}
+			}
+		}
+		&.text-center{
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+.dlab-content-bx{
+	&.style-1{
+		background-color: $white;
+		border-radius: 50%;
+		box-shadow: 0 0px 10px 4px rgba(31, 66, 135, 0.1);
+		width: 250px;
+		height: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		transition: all 0.5s;
+		padding: 15px;
+		.counter{
+			font-size: 48px;
+		}
+		.title{
+			font-size: 20px;
+			color: $dark;
+			font-weight: 500;
+		}
+		&:hover{
+			transform: translateY(-15px);
+		}
+		@include respond('tab-land'){
+			height: 200px;
+			width: 200px;
+			.counter{
+				font-size: 42px;
+			}
+			.title{
+				font-size: 16px;
+			}
+		}
+	}
+	&.style-2{
+		background-color: $white;
+		border-radius: 10px;
+		box-shadow: 0 0px 10px 4px rgba(31, 66, 135, 0.1);
+		padding: 15px;
+	}
+	&.style-3{
+		background-color: $white;
+		border-radius: 50%;
+		box-shadow: 0 0px 0 15px rgba($white, 0.5);
+		width: 235px;
+		height: 235px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 15px auto;
+		transition: all 0.5s;
+		padding: 15px;
+		.counter{
+			font-size: 48px;
+		}
+		.title{
+			font-size: 20px;
+			color: $dark;
+			font-weight: 500;
+		}
+		&:hover{
+			transform: translateY(-15px);
+		}
+		@include respond('tab-land'){
+			height: 200px;
+			width: 200px;
+			.counter{
+				font-size: 42px;
+			}
+			.title{
+				font-size: 16px;
+			}
+		}
+	}
+}

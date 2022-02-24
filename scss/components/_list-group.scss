@@ -1,0 +1,50 @@
+ul{
+	&[class*=list-] {
+		font-size: 15px;
+		li{
+			position: relative;
+			padding: 8px 5px 8px 35px;
+			&:before{
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	&.list-check{
+		li{
+			&:before{
+				content: "\f120";
+				font-family: Flaticon;
+				font-size: 24px;
+			}
+		}
+		&.style-1{
+			li{
+				padding: 8px 5px 8px 28px;
+				&:before{
+					content: "\f058";
+					font-family: 'Line Awesome Free';
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	&.list-arrow{				
+		li{
+			&:before{
+				content: "\f101";
+				font-family: fontawesome;
+				font-size: 24px;
+			}
+		}
+	}
+	&.primary{
+		li{
+			&:before{
+				color: $primary;
+			}
+		}
+	}
+}

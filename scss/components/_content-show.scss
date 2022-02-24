@@ -1,0 +1,82 @@
+/* info box show */
+.dlab-info-has {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 15px 40px;
+    opacity: 0;
+    margin-bottom: -100px;
+    z-index: 2;
+	&.p-a15 {
+		padding: 15px;
+	}
+	&.p-a20 {
+		padding: 20px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	a,
+	p,
+	h6 {
+	    color: #fff;	
+	}
+	.dlab-info-has-text {
+		margin-bottom: 20px;
+		line-height: 24px;
+	}
+	&.bg-white{
+		h1,
+		h2,
+	    h3,
+	    h4,
+	    h5,
+	    h6 {
+		    color: #3d474a;
+			a{
+				color: #3d474a;
+			}
+		}
+		p{
+			color: #3d474a;
+		}
+	}
+}
+.dlab-info-has.bg-primary {
+    background-color: rgba(27, 188, 232, 0.9);
+}
+.dlab-info-has.bg-green {
+    background-color: rgba(106, 179, 62, 0.9);
+}
+.dlab-info-has.bg-black {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.dlab-info-has.bg-white {
+    background-color: rgba(255, 255, 255, 0.8)!important;
+}
+.dlab-media {
+    overflow: hidden;
+    position: relative;
+	&:hover .dlab-info-has {
+		opacity: 1;
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+.dlab-box:hover .dlab-info-has{
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 0;
+}
+// WITHOUT HOVER
+.overlay-bx.no-hover,
+.dlab-info-has.no-hover {
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 0;
+	visibility: visible;
+}

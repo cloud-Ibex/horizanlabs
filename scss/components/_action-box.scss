@@ -1,0 +1,17 @@
+// action box
+.action-box{
+	&.style-1{
+		padding: 80px 0 30px;
+		@include respond('tab-port'){
+			padding: 60px 0 30px;
+		}
+		@include respond('phone-land'){
+			.text-right{
+				text-align: left!important;
+			}
+		}
+		@include respond('phone'){
+			padding: 50px 0 10px;
+		}
+	}
+}

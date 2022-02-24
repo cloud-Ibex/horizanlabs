@@ -1,0 +1,382 @@
+.dlab-img-overlay1,
+.dlab-img-overlay2,
+.dlab-img-overlay3,
+.dlab-img-overlay4,
+.dlab-img-overlay5,
+.dlab-img-overlay6,
+.dlab-img-overlay7,
+.dlab-img-overlay8,
+.dlab-img-overlay9,
+.dlab-img-overlay11,
+.dlab-img-overlay12{
+    position: relative;
+	
+	&:before,
+	&:after{
+		content: "";
+		background: #000;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		opacity: 0.4;
+		z-index: 1;
+		-webkit-transition: all 0.8s linear;
+		-moz-transition: all 0.8s linear;
+		-ms-transition: all 0.8s linear;
+		-o-transition: all 0.8s linear;
+		transition: all 0.8s linear;
+	}
+	&.overlay-primary{
+		background:$primary;
+	}
+}
+// DLAB BOX
+.dlab-box{
+	&:hover{
+		.dlab-img-overlay1:before {
+			opacity: 0.5;
+		}
+		.dlab-img-overlay2:before {
+			opacity: 0.9;
+		}
+		.dlab-img-overlay3:before {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+		.dlab-img-overlay4:before {
+			width: 100%;
+			left: 0;
+		}
+		.dlab-img-overlay5:before {
+			height: 100%;
+			top: 0;
+		}
+		.dlab-img-overlay6:before {
+			height: 100%;
+		}
+		.dlab-img-overlay7:before,
+		.dlab-img-overlay7:after{
+			width: 50%;
+		}
+		.dlab-img-overlay8:before,
+		.dlab-img-overlay8:after {
+			width: 100%;
+			opacity: 0.3;
+		}
+		.dlab-img-overlay9:before,
+		.dlab-img-overlay9:after {
+			width: 100%;
+			height: 100%;
+			opacity: 0.3;
+		}
+	}
+}
+// EFFECT 1
+.dlab-img-overlay1{
+
+	&:before{
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	&:hover:before{
+		opacity: 0.5;
+	}
+}
+// EFFECT 2
+.dlab-img-overlay2:before {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+	
+    &:hover:before{
+	    opacity: 0.9;
+	}
+}
+// EFFECT 3 
+.dlab-img-overlay3{
+	&:before {
+		left: 50%;
+		top: 50%;
+	}
+	&:hover:before{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+// EFFECT 4
+.dlab-img-overlay4{
+	&:before{
+		left: 50%;
+		top: 0;
+		height: 100%;
+	}
+	&:hover:before{
+		width: 100%;
+		left: 0;
+	}
+}
+// EFFECT 5
+.dlab-img-overlay5{
+	&:before {
+		left: 0;
+		top: 50%;
+		width: 100%;
+	}
+	&:hover:before{
+		height: 100%;
+		top: 0;
+	}
+}
+// EFFECT 6
+.dlab-img-overlay6{
+	&:before {
+		left: 0;
+		top: auto;
+		bottom: 0;
+		width: 100%;
+	}
+	&:hover:before{
+		height: 100%;
+	}
+}
+// EFFECT 7
+.dlab-img-overlay7{
+    &:before,
+	&:after {
+		height: 100%;
+	}
+	&:after {
+		left: auto;
+		right: 0;
+	}
+	&:hover:before,
+	&:hover:after{
+       width: 50%;
+	}
+}
+// EFFECT 8
+.dlab-img-overlay8{
+	&:before,
+	&:after{
+		height: 100%;
+	}
+	&:after {
+		left: auto;
+		right: 0;
+	}
+	&:hover:before,
+	&:hover:after{
+		width: 100%;
+		opacity: 0.3;
+	}
+}
+// EFFECT 9
+.dlab-img-overlay9:before,
+.dlab-img-overlay9:after{
+	&:before,
+	&:after{
+		left: auto;
+		right: 0;
+		top: auto;
+		bottom: 0;
+	}
+    &:hover:before,
+	&:hover:after{
+	    width: 100%;
+		height: 100%;
+		opacity: 0.3;
+	}
+}
+/*  */
+.overlay-black-light,
+.overlay-black-middle,
+.overlay-black-dark,
+.overlay-gradient-light,
+.overlay-gradient-middle,
+.overlay-gradient-dark,
+.overlay-white-light,
+.overlay-white-middle,
+.overlay-white-dark,
+.overlay-primary-light,
+.overlay-primary-middle,
+.overlay-primary-dark,
+.overlay-primary {
+    position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.container,
+	.container-fluid{
+		position: relative;
+		z-index: 1;
+	}
+}
+.overlay-black-light:before,
+.overlay-black-middle:before,
+.overlay-black-dark:before {
+    background: #000;
+}
+.overlay-gradient-light:before,
+.overlay-gradient-middle:before,
+.overlay-gradient-dark:before {
+    background: var(--gradient);
+    background-size: 200%;
+}
+.overlay-white-light:before,
+.overlay-white-middle:before,
+.overlay-white-dark:before {
+    background: #FFF;
+}
+.overlay-primary-light:before,
+.overlay-primary-middle:before,
+.overlay-primary-dark:before,
+.overlay-primary:before {
+    background:$primary;
+}
+.overlay-primary-light:before,
+.overlay-white-light:before,
+.overlay-gradient-light:before,
+.overlay-black-light:before {
+    opacity: 0.3;
+}
+.overlay-primary-middle:before,
+.overlay-white-middle:before,
+.overlay-gradient-middle:before,
+.overlay-black-middle:before {
+    opacity: 0.5;
+}
+.overlay-primary-dark:before,
+.overlay-white-dark:before,
+.overlay-gradient-dark:before,
+.overlay-black-dark:before {
+    opacity: 0.8;
+}
+// OVERLAY BOX
+.overlay-bx {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+	@include transitionSlow;
+	
+	.align-b{
+		height: auto;
+		left: 0;
+		list-style: outside none none;
+		margin: 0;
+		position: absolute;
+		top:auto;
+		bottom: 0;
+		width: 100%;
+		transform: translate(0);
+		-o-transform: translate(0);
+		-moz-transform: translate(0);
+		-webkit-transform: translate(0);
+	}
+	.align-m {
+		height: auto;
+		left: 50%;
+		list-style: outside none none;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		width: 100%;
+		padding: 0 10px;
+	}
+}
+.overlay-icon{
+    height: auto;
+    left: 50%;
+    list-style: outside none none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 100%;
+	padding: 0 10px;
+	a {
+		display: inline-block;
+		padding: 0;
+		margin: 0 2px;
+		i{
+			background-color: #FFF;
+		}
+	}
+}
+.overlay-bx:hover a > i,
+.dlab-media:hover .overlay-bx a > i,
+.dlab-box-bx:hover .overlay-bx a > i {
+    opacity: 1;
+    visibility: visible;
+    @include transitionMedium;
+}
+.overlay-bx:hover,
+.dlab-media:hover .overlay-bx,
+.dlab-box:hover .overlay-bx,
+.ow-img:hover .overlay-bx,
+.ow-portfolio-img:hover .overlay-bx {
+    opacity: 1;
+    visibility: visible;
+}
+//gallery-box-1
+
+.gallery-box-1 {
+    .overlay-bx{
+		.overlay-icon span i,
+		.overlay-icon a i{
+			background-color: #000;
+			color: #fff;
+			border-radius: 50px;
+			font-size: 14px;
+			cursor:pointer;
+		}
+		.icon-bx-xs {
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

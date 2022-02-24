@@ -1,0 +1,135 @@
+// dlab-accordion
+.dlab-accordion {
+    .collapsed {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow   : 0 0px 10px 4px rgba(31, 66, 135, 0.1);
+        border-radius: 8px;
+        overflow     : hidden;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding      : 25px 30px;
+        border-radius: 0;
+    }
+
+    .card-header {
+        padding: 0;
+        border : 0;
+
+        .dlab-title {
+            margin: 0;
+            width : 100%;
+
+            a {
+                width           : 100%;
+                border-radius   : 8px;
+                padding         : 24px 65px 24px 30px;
+                transition      : all 0.5s;
+                background-image: var(--gradient);
+                background-size : 200%;
+                color           : $white;
+                display         : block;
+                position        : relative;
+                box-shadow      : 0 0px 10px 4px rgba(31, 66, 135, 0.1);
+
+                &:after {
+                    content         : "";
+                    background-color: $white;
+                    font-family     : themify;
+                    height          : 55px;
+                    width           : 55px;
+                    display         : block;
+                    position        : absolute;
+                    right           : 5px;
+                    top             : 6px;
+                    border-radius   : 8px;
+                    line-height     : 57px;
+                    text-align      : center;
+                    font-size       : 24px;
+                    transition      : all 0.5s;
+                }
+
+                &:before {
+                    content    : "\e61a";
+                    color      : $primary;
+                    position   : absolute;
+                    right      : 20px;
+                    top        : 20px;
+                    font-size  : 24px;
+                    font-family: 'themify';
+                    z-index    : 99;
+                    opacity    : 1;
+                    transform  : rotate(45deg);
+                    transition : all 0.5s;
+                }
+
+                &.collapsed {
+                    background: $white;
+                    color     : $secondary;
+
+                    &:after {
+                        content         : "\e61a";
+                        color           : $white;
+                        background-image: var(--gradient);
+                        background-size : 200%;
+                    }
+
+                    &:before {
+                        opacity  : 0;
+                        transform: rotate(0);
+                    }
+                }
+            }
+        }
+
+        @include respond('phone') {
+            .dlab-title {
+                a {
+                    padding: 15px 65px 15px 15px;
+                }
+            }
+        }
+    }
+
+    &.accordion-sm {
+        .card-header {
+            .dlab-title {
+                a {
+                    padding: 16px 55px 16px 20px;
+
+                    &:after {
+                        height          : 40px;
+                        width           : 40px;
+                        right           : 5px;
+                        top             : 6px;
+                        line-height     : 40px;
+                        font-size       : 20px;
+                        background-color: #fff;
+                    }
+
+                    &:before {
+                        right    : 14px;
+                        top      : 14px;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            @include respond('phone') {
+                .dlab-title {
+                    a {
+                        padding: 15px 65px 15px 15px;
+                    }
+                }
+            }
+        }
+    }
+}

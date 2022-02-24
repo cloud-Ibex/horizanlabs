@@ -1,0 +1,11 @@
+.site-footer{
+	&.style-3{
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color: $primary;
+		.footer-top{
+			background: transparent;
+		}
+	}
+}

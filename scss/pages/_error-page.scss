@@ -1,0 +1,33 @@
+/* Error Page */
+.error-page{
+	padding: 150px 0;
+	.dlab_error {
+		font-size: 190px;
+		font-weight: 700;
+		line-height: 160px;
+		margin: auto;
+		color: $primary;
+		opacity: 0.2;
+	}
+	.error-head {
+		font-size: 30px;
+		font-weight: 500;
+		margin: 15px 0 25px;
+		max-width: 600px;
+		line-height: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		color: #000;
+	}
+	@include respond('phone'){
+		padding: 50px 0;
+		.dlab_error {
+			font-size: 120px;
+			line-height: 120px;
+		}
+		.error-head{
+			font-size: 24px;
+			line-height: 34px;
+		}
+	}
+}

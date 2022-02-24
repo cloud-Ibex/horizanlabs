@@ -1,0 +1,80 @@
+//to ignore cli warning about deprecated mixin
+$enable-deprecation-messages: false;
+$ignore-warning             : true;
+
+:root{
+	--gradient: linear-gradient(to right,#896eff 0,#5f3bff 51%,#896eff 100%);
+	--gradient-sec: linear-gradient(to right,#130065 0,#2b0ead 51%,#130065 100%);
+}
+
+// Color
+$primary   : #896eff;
+$secondary : #1f2471 !default;
+$success   : #029e76 !default;
+$info      : #00aeff !default;
+$warning   : #fea500 !default;
+$danger    : #ff5269 !default;
+$light     : #faf8f2 !default;
+$dark      : #262F5A;
+
+// Body
+$body-bg   : #fff;
+$body-color: #888;
+
+// Typography
+$barlow: 'Barlow', sans-serif;
+$font-family-base : 'Poppins', sans-serif;
+$font-family-title : 'Source Sans Pro', sans-serif;
+$headings-font-weight   : 700;
+
+// $headings-font-family:        $fm;
+$font-size-base         : 1rem !default;
+$font-weight-base       : 400 !default;
+
+// $line-height-base    : 1.6;
+$h1-font-size           : 3.375rem;
+$h2-font-size           : 2.375rem;
+$h3-font-size           : 2rem;
+$h4-font-size           : 1.5625rem;
+$h5-font-size           : 1.25rem;
+$h6-font-size           : 0.875rem;
+
+$text-muted : #AEAED5;
+$colors     : () !default;
+
+$heading-primary-size: 1.8rem;
+$sub-heading-size    : 1.6rem !default;
+$grid-gutter-width   : 30px;
+$dropdown-lik-color  : $body-color;
+$border-color        : #E1E1F0;
+$headings-color      :#000 !default;
+$grid-breakpoints    : (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440);
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1199px) !default;
+
+$input-btn-focus-width: 0rem !default;
+$border-radius-base   : 4px !default;
+$shadow-color: rgba(160, 159, 202, 0.15);
+$border-radius: 1.5rem;
+
+// Other Color
+$orange  : #ff8853;
+$skyblue : #00aeff;
+$maroon  : #9e0168;
+$yellow  : #ffa808;
+$red     : #ff586e;
+$green   : #029e76;
+$blue    : #5543d1;
+
+// Color Opacity
+$primary-light: rgba($primary,0.1);
+$secondary-light: rgba($secondary,0.1);
+$success-light: rgba($success,0.1);
+$warning-light: rgba($warning,0.1);
+$danger-light: rgba($danger,0.1);
+$info-light: rgba($info,0.1);
+$dark-light: rgba($dark,0.1);
+$white-light: rgba($light,0.1);
+$yellow-light: rgba($yellow,0.1);

@@ -1,0 +1,22 @@
+.site-footer{
+	&.style-1{
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color: $primary;
+		.footer-top{
+			background: transparent;
+			.widget_services{
+				padding-left: 100px;
+			}
+		}
+		
+		@include respond('tab-land'){
+			.footer-top{
+				.widget_services{
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}

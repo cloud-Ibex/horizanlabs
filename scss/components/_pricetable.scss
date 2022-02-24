@@ -1,0 +1,343 @@
+// PRICING TABLE
+.pricingtable-inner {
+    text-align: center;
+}
+
+.pricingtable-features {
+    margin    : 0;
+    padding   : 0;
+    list-style: none;
+
+    li {
+        padding: 12px;
+
+        i {
+            margin: 0 3px;
+        }
+    }
+
+}
+
+.no-col-gap .pricingtable-wrapper {
+    margin-left: -1px;
+}
+
+// Table =======
+.table-option {
+    border       : 2px solid #adadad;
+    border-radius: 6px;
+    padding      : 50px 0px 30px 0;
+
+    .pricingtable-footer {
+        border          : 0;
+        background-color: transparent;
+    }
+
+    .pricingtable-features {
+        border          : 0;
+        background-color: transparent;
+
+        li {
+            border          : 0;
+            background-color: transparent;
+            color           : #919191;
+            font-size       : 18px;
+        }
+    }
+
+    .pricingtable-title {
+        border          : 0;
+        background-color: transparent;
+        padding         : 0;
+
+        * {
+            color: #000;
+        }
+
+        h2 {
+            font-size  : 28px;
+            line-height: 36px;
+        }
+    }
+
+    .pricingtable-price {
+        padding         : 0;
+        border          : 0;
+        background-color: transparent;
+    }
+
+    .pricingtable-bx {
+        color      : #000;
+        font-size  : 63px;
+        font-weight: 800;
+
+        strong,
+        sup {
+            font-size  : 30px;
+            font-weight: 700;
+        }
+    }
+
+    &:hover,
+    &.active {
+        background-color: #eeeeee;
+        border          : 2px solid #eeeeee;
+    }
+
+    &.dark {
+        @include transitionMedium;
+
+        &:hover,
+        &.active {
+            background-color: #404040;
+            border          : 2px solid #404040;
+            box-shadow      : 0 0 10px 5px rgba(0, 0, 0, 0.3);
+            transition      : all 0.5s;
+
+            .pricingtable-features li,
+            .pricingtable-title h2,
+            .pricingtable-price .pricingtable-bx {
+                color: #fff;
+                @include transitionMedium;
+            }
+
+            .pricingtable-footer .btn.black {
+                background-color: #fff;
+                border-color    : rgba(0, 0, 0, 0);
+                color           : #000;
+            }
+        }
+    }
+}
+
+// pricingtable-toggle
+.pricingtable-toggle {
+    display        : flex;
+    margin         : auto;
+    justify-content: center;
+    padding        : 0;
+    margin-bottom  : 10px;
+
+    span {
+        font-size  : 18px;
+        margin-top : 5px;
+        font-weight: 500;
+    }
+
+    .custom-control-label {
+        margin: 0 35px 0 50px;
+    }
+}
+
+// Pricing Table
+.pricingtable-wrapper {
+    box-shadow      : 0px 0 10px rgba(31, 66, 135, 0.3);
+    border-radius   : 10px;
+    overflow        : hidden;
+    transition      : all 0.5s;
+    background-color: $white;
+
+    &.style-1 {
+        padding: 50px 30px;
+
+        .pricingtable-bx {
+            color     : $primary;
+            margin    : 0;
+            transition: all 0.5s;
+        }
+
+        .pricingtable-features {
+            padding: 15px 0;
+
+            li {
+                padding    : 8px 0;
+                font-weight: 500;
+            }
+        }
+
+        .btn {
+            transition: all 0.5s;
+        }
+
+        &:hover,
+        &.active {
+            background-image: var(--gradient);
+            background-size : 200%;
+
+            .pricingtable-features {
+                li {
+                    color: $white;
+                }
+            }
+
+            .pricingtable-bx {
+                color: $white;
+            }
+
+            .pricingtable-title {
+                h3 {
+                    color: $white;
+                }
+            }
+
+            .btn {
+                color: $white;
+
+                i {
+                    color           : $primary;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    &.style-2 {
+        padding: 30px;
+
+        [class*="icon-bx-"] {
+            position: relative;
+            margin  : 30px 20px;
+
+            &:before {
+                content          : "";
+                position         : absolute;
+                top              : -10px;
+                left             : -10px;
+                background-image : url(.././public/images/pattern/pattern1.png);
+                height           : 110px;
+                width            : 110px;
+                background-repeat: no-repeat;
+            }
+
+            .icon-cell {
+                i {
+                    font-size: 42px;
+                    color    : $primary;
+                }
+            }
+        }
+
+        .pricingtable-features {
+            padding: 10px 0 20px;
+
+            li {
+                padding: 5px 0;
+            }
+        }
+
+        .pricingtable-bx {
+            font-size: 42px;
+
+            .pricingtable-type {
+                font-size  : 45%;
+                font-weight: 600;
+            }
+        }
+
+        &.active,
+        &:hover {
+            background-image: var(--gradient);
+            background-size : 200%;
+
+            [class*="icon-bx-"] {
+                background-color: rgba(255, 255, 255, 0.5);
+
+                .icon-cell {
+                    i {
+                        color: $white;
+                    }
+                }
+
+                &:before {
+                    background-image: url(.././public/images/pattern/pattern1-light.png);
+                }
+            }
+
+            .btn {
+                color           : $primary;
+                background-color: $white;
+                background-image: unset;
+            }
+
+            .pricingtable-features {
+                li {
+                    color: $white;
+                }
+            }
+
+            .pricingtable-bx {
+                color: $white;
+            }
+
+            .pricingtable-title {
+                h3 {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.style-3 {
+        padding-bottom: 35px;
+
+        .pricingtable-head {
+            position        : relative;
+            background-image: var(--gradient-sec);
+            background-size : 200%;
+            padding         : 30px 30px 0;
+            margin-bottom   : 10px;
+
+            &:after {
+                content            : "";
+                background-image   : url(.././public/images/pattern/pattern4.png);
+                background-position: bottom;
+                background-repeat  : no-repeat;
+                background-size    : contain;
+                height             : 100%;
+                width              : 100%;
+                position           : absolute;
+                bottom             : 0;
+                left               : 0;
+            }
+
+            .pricingtable-title {
+                h3 {
+                    color: $white;
+                }
+            }
+
+            .icon-cell {
+                z-index : 9;
+                position: relative;
+            }
+        }
+
+        .pricingtable-features {
+            margin: 25px 0;
+
+            li {
+                padding: 5px 10px;
+            }
+        }
+
+        .pricingtable-bx {
+            font-size: 45px;
+
+            small {
+                font-size  : 18px;
+                color      : lighten($dark, 20);
+                font-weight: 600;
+                margin-left: 8px;
+            }
+        }
+
+        &.active,
+        &:hover {
+            .btn {
+                background-color: $primary;
+                color           : $white;
+            }
+        }
+    }
+
+}

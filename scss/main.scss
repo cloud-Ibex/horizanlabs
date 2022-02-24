@@ -1,0 +1,25 @@
+/*
+    Name: Samar 
+    Author: DexignZone
+    Portfolio : https://themeforest.net/user/dexignzone/portfolio
+   
+
+    Table of Content: 
+
+    1. Abstract
+    2. Bootstrap CSS
+    3. Base
+    4. Layout
+    5. Component
+    6. Dashboard
+    7. Pages
+    
+    
+*/
+
+@import "./abstract/abstract";
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./base/base";
+@import "./components/components";
+@import "./pages/pages";
+@import "./layout/layout";

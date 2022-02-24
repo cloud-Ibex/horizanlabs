@@ -1,0 +1,103 @@
+import Footer from '../layout/footer';
+import Header from '../layout/header';
+
+
+function ServicesDetails() {
+  return (
+    <>
+    <Header/>
+    
+     <Footer/>
+    </>
+  )
+}
+
+export default ServicesDetails;
+
+
+
+For Video:
+import { useState } from 'react';
+import ModalVideo from 'react-modal-video';
+
+/**inside the function before return()**/
+const [isOpen, setOpen] = useState(false)
+
+/*Will have to change the button*/
+<a href="#" className="popup-youtube" onClick={()=> setOpen(true)}><i className="flaticon-play"></i></a>
+
+/**Just have to add the Modal inside the wrap **/
+<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="0S6pHex-KCo" onClose={() => setOpen(false)} />
+
+
+/** **/
+function Pricing() {
+    const [open, setOpen] = useState("p2")
+}
+
+<div className="pricingtable-row pricingtable-wraper-1">
+							<div className={`${open === "p1" ? "pricingtable-wrapper style-1 m-b30 active" : "pricingtable-wrapper style-1 m-b30"}`} onMouseOver={() => setOpen("p1")}>
+								<div className="pricingtable-inner">
+									<div className="pricingtable-title">
+										<h3>Basic Plan</h3>
+									</div>
+									<div className="pricingtable-price"> 
+										<h2 className="pricingtable-bx">$49</h2>
+									</div>
+									<ul className="pricingtable-features">
+										<li>Graphic Design </li>
+										<li>Web Design</li>
+										<li>UI/UX</li>
+										<li>HTML/CSS</li>
+										<li>SEO Marketing</li>
+										<li>Business Analysis</li>
+									</ul>
+									<div className="pricingtable-footer"> 
+										<a href="pricing-table-1.html" className="btn btn-link d-inline-flex align-items-center"><i className="fa fa-angle-right m-r10"></i>Start Now</a> 
+									</div>
+								</div>
+							</div>
+							<div className={`${open === "p2" ? "pricingtable-wrapper style-1 m-b30 center active" : "pricingtable-wrapper center style-1 m-b30"}`} onMouseOver={() => setOpen("p2")}>
+								<div className="pricingtable-inner">
+									<div className="pricingtable-title">
+										<h3>Standart Plan</h3>
+									</div>
+									<div className="pricingtable-price"> 
+										<h2 className="pricingtable-bx">$99</h2>
+									</div>
+									<ul className="pricingtable-features">
+										<li>Graphic Design </li>
+										<li>Web Design</li>
+										<li>UI/UX</li>
+										<li>HTML/CSS</li>
+										<li>SEO Marketing</li>
+										<li>Business Analysis</li>
+									</ul>
+									<div className="pricingtable-footer"> 
+										<a href="pricing-table-1.html" className="btn btn-link d-inline-flex align-items-center"><i className="fa fa-angle-right m-r10"></i>Start Now</a> 
+									</div>
+								</div>
+							</div>
+							<div className={`${open === "p3" ? "pricingtable-wrapper style-1 m-b30 active" : "pricingtable-wrapper style-1 m-b30"}`} onMouseOver={() => setOpen("p3")}>
+								<div className="pricingtable-inner">
+									<div className="pricingtable-title">
+										<h3>Premium Plan</h3>
+									</div>
+									<div className="pricingtable-price"> 
+										<h2 className="pricingtable-bx">$149</h2>
+									</div>
+									<ul className="pricingtable-features">
+										<li>Graphic Design </li>
+										<li>Web Design</li>
+										<li>UI/UX</li>
+										<li>HTML/CSS</li>
+										<li>SEO Marketing</li>
+										<li>Business Analysis</li>
+									</ul>
+									<div className="pricingtable-footer"> 
+										<a href="pricing-table-1.html" className="btn btn-link d-inline-flex align-items-center"><i className="fa fa-angle-right m-r10"></i>Start Now</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+						

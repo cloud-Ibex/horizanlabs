@@ -1,0 +1,22 @@
+{
+  "/_app": "pages/_app.js",
+  "/about-us-1": "pages/about-us-1.html",
+  "/api/hello": "pages/api/hello.js",
+  "/blank": "pages/blank.html",
+  "/blog-details-1": "pages/blog-details-1.html",
+  "/blog-large-right-sidebar": "pages/blog-large-right-sidebar.html",
+  "/coming-soon": "pages/coming-soon.html",
+  "/contact-us-1": "pages/contact-us-1.html",
+  "/error-404": "pages/error-404.html",
+  "/faq-1": "pages/faq-1.html",
+  "/": "pages/index.html",
+  "/pricing-table-1": "pages/pricing-table-1.html",
+  "/services-1": "pages/services-1.html",
+  "/services-details-1": "pages/services-details-1.html",
+  "/sitedown": "pages/sitedown.html",
+  "/team-1": "pages/team-1.html",
+  "/test": "pages/test.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

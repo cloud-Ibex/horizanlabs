@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport { Fragment as _Fragment } from \"react/jsx-runtime\";\n\nfunction Blank() {\n  return /*#__PURE__*/_jsx(_Fragment, {\n    children: \"Blank\"\n  });\n}\n\nexport default Blank;","map":null,"metadata":{},"sourceType":"module"}

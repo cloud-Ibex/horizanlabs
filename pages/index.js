@@ -3,15 +3,15 @@ import AboutUs from "../element/aboutUs";
 import Blog from "../element/blog";
 import Clients from "../element/clients";
 import Counter from "../element/counter";
-import Cta from "../element/cta";
-import Newsletter from "../element/newsletter";
+// import Cta from "../element/cta";
+// import Newsletter from "../element/newsletter";
 import Features from "../element/our-features";
-import Pricing from "../element/pricing";
-import Projects from "../element/projects";
+// import Pricing from "../element/pricing";
+// import Projects from "../element/projects";
 import Quote from "../element/quote";
 import Service from "../element/service";
 import Slider1 from "../element/slider-1";
-import Team from "../element/team";
+// import Team from "../element/team";
 import Testimonial from "../element/testimonial";
 import Footer from "../layout/footer";
 import Header from "../layout/header";
@@ -29,14 +29,14 @@ function Home() {
         <Service />
         <AboutUs />
         <Features />
-        <Projects />
-        <Newsletter />
-        <Team />
-        <Pricing />
+        {/* <Projects /> */}
+        {/* <Newsletter /> */}
+        {/* <Team /> */}
+        {/* <Pricing /> */}
         <Testimonial />
         <Blog />
         <Quote />
-        <Cta />
+        {/* <Cta /> */}
 	  { /* 
 	  */}
       </div>

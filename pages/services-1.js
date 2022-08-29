@@ -38,7 +38,7 @@ function Services1() {
 		<AllServices/>
 		
 		{/* <!-- Newsletter --> */}
-		<section className="content-inner-3 bg-primary" style={{"backgroundImage":"url(images/background/bg13.png)","backgroundRepeat":"no-repeat","backgroundSize":"cover"}}>
+		{/* <section className="content-inner-3 bg-primary" style={{"backgroundImage":"url(images/background/bg13.png)","backgroundRepeat":"no-repeat","backgroundSize":"cover"}}>
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -68,10 +68,10 @@ function Services1() {
 					</div>
 				</div>
 			</div>
-		</section>	
+		</section>	 */}
 		
 		{/* <!-- Fetures --> */}
-		<section className="content-inner-2">
+		{/* <section className="content-inner-2">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-xl-6 col-lg-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -128,19 +128,19 @@ function Services1() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> */}
 		
 		{/* <!-- Team --> */}
-		<Team/>
+		{/* <Team/> */}
 		
 		{/* <!-- Testimonials --> */}
-		<Testimonial/>
+		{/* <Testimonial/> */}
 		
 		{/* <!-- Get A Quote --> */}
-		<Quote/>
+		{/* <Quote/> */}
 		
 		{/* <!-- Call To action --> */}
-		<section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
+		{/* <section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
 			<div className="container">
 				<div className="row action-box style-1 align-items-center">
 					<div className="col-xl-7 col-lg-8 col-md-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -156,7 +156,7 @@ function Services1() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> */}
 		
 	</div>
     <Footer/>

@@ -12,9 +12,9 @@ function Header() {
             <div className="sticky-header main-bar-wraper navbar-expand-lg">
                 <div className="main-bar clearfix ">
                     <div className="container clearfix">
-                        {/* <!-- Website Logo --> */}
-                        <div className="logo-header mostion logo-dark">
-                           <Link href="/"><a><img src="images/Arsol.png" alt=""/></a></Link>
+                       {/* <!-- Website Logo --> */}
+                       <div className="logo-header mostion logo-dark">
+                           <Link href="/"><a><img src="images/logo.png" alt=""/></a></Link>
                         </div>
                         {/* <!-- Nav Toggle Button --> */}
                         <button className={`navbar-toggler collapsed navicon justify-content-end ${show ? "open" : ""}`} onClick={() => setShow(!show)}>

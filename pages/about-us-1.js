@@ -76,7 +76,7 @@ function AboutUs1() {
 		<Counter/>
 
 		{/* <!-- About Us --> */}
-		<section className="content-inner-2">
+		{/* <section className="content-inner-2">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-lg-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -130,11 +130,11 @@ function AboutUs1() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> */}
 		
 		
 		{/* <!-- Team --> */}
-		<section className="content-inner">
+		{/* <section className="content-inner">
 			<div className="container">
 				<div className="section-head style-1 text-center">
 					<h6 className="sub-title bgl-primary m-b20 text-primary">Team</h6>
@@ -146,19 +146,19 @@ function AboutUs1() {
 					</div>
 				</div>
 			</div>
-		</section>	
+		</section>	 */}
 		
 		{/* <!-- Testimonials --> */}
-		<Testimonial/>
+		{/* <Testimonial/> */}
 		
 		{/* <!-- Blog --> */}
 		<Blog/>
 		
 		{/* <!-- Get A Quote --> */}
-		<Quote/>		
+		{/* <Quote/>		 */}
 		
 		{/* <!-- Call To Action --> */}
-		<section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
+		{/* <section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
 			<div className="container">
 				<div className="row action-box style-1 align-items-center">
 					<div className="col-xl-7 col-lg-8 col-md-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -172,7 +172,7 @@ function AboutUs1() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> */}
             </div>
             <Footer />
         </>

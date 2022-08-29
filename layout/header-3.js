@@ -91,7 +91,7 @@ function Header3() {
 
                                 {/* <li className={`${open === "blog" ? "open" : ""}`}><a onClick={() => setOpen("blog")}><span>Blog</span><i className="fa fa-chevron-down"></i></a>
                                     <ul className="sub-menu"> */}
-                                        <li><Link href="/blog-large-right-sidebar"><a>Blog</a></Link></li>
+                                        <li><Link href="/blog-details-1"><a>Blog</a></Link></li>
 										{/* <li><Link href="/blog-details-1"><a>Blog Details</a></Link></li> */}
                                     {/* </ul>
                                 </li> */}

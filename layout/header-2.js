@@ -54,8 +54,8 @@ function Header2() {
                             <div className="logo-header mostion logo-dark">
                                 <Link href="/">
                                     <a>
-                                        <img className="custom-logo-white" src="images/logo-white.png" alt="" />
-                                        <img className="custom-logo" src="images/logo.png" alt="" />
+                                        <img className="custom-logo-white" src="images/arsol-white.png" alt="" />
+                                        <img className="custom-logo" src="images/arsol.png" alt="" />
                                     </a>
                                 </Link>
                             </div>
@@ -87,7 +87,7 @@ function Header2() {
                                 <div className="logo-header">
                                     <Link href="/">
                                         <a>
-                                            <img src="images/logo.png" alt="" />
+                                            <img src="images/arsol.png" alt="" />
                                         </a>
                                     </Link>
                                 </div>

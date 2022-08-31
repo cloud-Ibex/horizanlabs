@@ -33,7 +33,7 @@ function Footer2() {
 					<div className="col-xl-3 col-lg-4 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
                         <div className="widget widget_about">
 							<div className="footer-logo">
-								<a href="/"><img src="images/logo-white.png" alt=""/></a> 
+								<a href="/"><img src="images/arsol-white.png" alt=""/></a> 
 							</div>
 							<div className="widget widget_getintuch">
 								<ul>

@@ -34,7 +34,7 @@ function ComingSoon() {
                 <div className="container">
 					<div className="text-center">
 						<div className="cs-logo">
-							<div className="logo"><img src="images/logo-white.png" alt=""/></div>
+							<div className="logo"><img src="images/arsol-white.png" alt=""/></div>
 						</div>
 						<div className="cs-title">Coming Soon</div>
 						<div className="countdown text-center">

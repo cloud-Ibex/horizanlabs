@@ -11,7 +11,7 @@ function Footer() {
 					<div className="row align-items-center">
 						<div className="col-xl-6 col-md-4">
 							<div className="footer-logo">
-								<a href="/"><img src="images/Arsol.png" alt=""/></a> 
+								<a href="/"><img src="images/arsol-white.png" alt=""/></a> 
 							</div>
 						</div>
 						<div className="col-xl-3 col-md-4 col-sm-6">

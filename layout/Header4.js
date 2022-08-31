@@ -15,7 +15,7 @@ function Header4() {
                     <div className="container clearfix">
                         {/* <!-- Website Logo --> */}
                         <div className="logo-header mostion logo-dark">
-                           <Link href="/"><a><img src="images/logo.png" alt=""/></a></Link>
+                           <Link href="/"><a><img src="images/arsol.png" alt=""/></a></Link>
                         </div>
                         {/* <!-- Nav Toggle Button --> */}
                         <button className={`navbar-toggler collapsed navicon justify-content-end ${show ? "open" : ""}`} onClick={() => setShow(!show)}>
@@ -31,7 +31,7 @@ function Header4() {
                         </div>
                         <div className={`header-nav navbar-collapse collapse justify-content-end ${show ? "show" : ""}`} id="navbarNavDropdown">
                             <div className="logo-header">
-                                <Link href="/"><a><img src="images/logo.png" alt=""/></a></Link>
+                                <Link href="/"><a><img src="images/arsol.png" alt=""/></a></Link>
                             </div>
                             <ul className="nav navbar-nav navbar">	
                                 <li className={`${open === "home" ? "open" : ""}`}><a  onClick={() => setOpen("home")}><span>Home</span><i className="fa fa-chevron-down"></i></a>

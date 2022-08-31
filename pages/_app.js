@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
 			<Component {...pageProps} />
 		</div>
 		
-		<a
+		{/* <a
 			href="https://themeforest.net/cart/configure_before_adding/32950742/?license=regular;"
 			target="_blank"
 			className="bt-buy-now theme-btn"
@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }) {
 		>
 			<i className="ti-headphone-alt" />
 			<span>Support</span>
-		</a>
+		</a> */}
 		<a href="#top">
 			<button
 			  className="scroltop icon-up"

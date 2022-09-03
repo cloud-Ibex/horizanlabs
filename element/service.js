@@ -107,11 +107,11 @@ function Service() {
 					</Link>	
                 </div>
                 <div className="icon-content">
-                  <h4 className="dlab-title">Web Solution</h4>
+                  <h4 className="dlab-title">Serverless Solution</h4>
                   <p>
-                    Fusce sit amet dui vitae urna tristique imperdiet. Donec
-                    eget sapien euismod, faucibus nibh non, consequat elit.
-                    Praesent sed vehicula.
+                    Allow startups to test their ideas crafting Serverless 
+                    architecture for POC, reduce costs during 
+                    development and operations.
                   </p>
                 </div>
               </div>

@@ -24,7 +24,7 @@ function Service() {
             <h6 className="sub-title bgl-primary m-b20 text-primary">
               Services
             </h6>
-            <h2 className="title">Provide Awesome Service To You</h2>
+            <h2 className="title">What we do?</h2>
           </div>
           <div className="row">
             <div
@@ -48,11 +48,10 @@ function Service() {
 					</Link>  
                 </div>
                 <div className="icon-content">
-                  <h4 className="dlab-title">Strategy & Research</h4>
+                  <h4 className="dlab-title">Process Assistance</h4>
                   <p>
-                    Fusce sit amet dui vitae urna tristique imperdiet. Donec
-                    eget sapien euismod, faucibus nibh non, consequat elit.
-                    Praesent sed vehicula.
+                    Assist teams during their development and production journey. 
+                    Bootstrapping and automating business processes.
                   </p>
                 </div>
               </div>
@@ -78,11 +77,11 @@ function Service() {
 					</Link>	
                 </div>
                 <div className="icon-content">
-                  <h4 className="dlab-title">Web Development</h4>
+                  <h4 className="dlab-title">Data Analytics</h4>
                   <p>
-                    Fusce sit amet dui vitae urna tristique imperdiet. Donec
-                    eget sapien euismod, faucibus nibh non, consequat elit.
-                    Praesent sed vehicula.
+                    Extract, transform and manage the BigData. 
+                    Analyze datasets in the cloud with 
+                    the most up-to-date instruments.
                   </p>
                 </div>
               </div>
@@ -108,11 +107,11 @@ function Service() {
 					</Link>	
                 </div>
                 <div className="icon-content">
-                  <h4 className="dlab-title">Web Solution</h4>
+                  <h4 className="dlab-title">Serverless Solution</h4>
                   <p>
-                    Fusce sit amet dui vitae urna tristique imperdiet. Donec
-                    eget sapien euismod, faucibus nibh non, consequat elit.
-                    Praesent sed vehicula.
+                    Allow startups to test their ideas crafting Serverless 
+                    architecture for POC, reduce costs during 
+                    development and operations.
                   </p>
                 </div>
               </div>

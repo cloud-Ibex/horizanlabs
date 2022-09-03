@@ -77,11 +77,11 @@ function Service() {
 					</Link>	
                 </div>
                 <div className="icon-content">
-                  <h4 className="dlab-title">Web Development</h4>
+                  <h4 className="dlab-title">Data Analytics</h4>
                   <p>
-                    Fusce sit amet dui vitae urna tristique imperdiet. Donec
-                    eget sapien euismod, faucibus nibh non, consequat elit.
-                    Praesent sed vehicula.
+                    Extract, transform and manage the BigData. 
+                    Analyze datasets in the cloud with 
+                    the most up-to-date instruments.
                   </p>
                 </div>
               </div>

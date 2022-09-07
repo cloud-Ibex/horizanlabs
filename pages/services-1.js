@@ -20,7 +20,14 @@ function Services1() {
 		<div className="dlab-bnr-inr overlay-primary-dark" style={{"backgroundImage":"url(images/banner/bnr1.jpg)"}}>
 			<div className="container">
 				<div className="dlab-bnr-inr-entry">
-					<h1>Services 1</h1>
+					<h1>Process Assistance</h1>
+					<p >We gratefully respect the business process teams can have
+and are ready to give you our support combining all the benefits of Cloud solutions,
+without compromising the way everyday business runs in your company.
+As a tech company you need to manage source code, build and deliver it to the cloud.
+
+Our custom Serverless solutions allow you to manage all the tasks in a cloud and do sales
+via a Serverless CRM system, and because this is Serverless, you only ever pay for what you use.</p>
 					{/* <!-- Breadcrumb Row --> */}
 					<nav aria-label="breadcrumb" className="breadcrumb-row">
 						<ul className="breadcrumb">

@@ -16,8 +16,8 @@ function AllServices() {
 								</a> 
 							</div>
 							<div className="icon-content">
-								<h4 className="dlab-title">Strategy & Research</h4>
-								<p>Fusce sit amet dui vitae urna tristique imperdiet. Donec eget sapien euismod, faucibus nibh non, consequat elit. Praesent sed vehicula.</p>
+								<h4 className="dlab-title">Source code in the Cloud</h4>
+								<p>Whatever provider you choose to manage a source code with, we are ready to support and integrate it into the overall cloud architecture. As we have all the required CloudFormation templates, it’s possible to handle all types of Webhooks from Bitbucket , Github or native AWS CodeCommit .</p>
 							</div>
 						</div>
 					</div>
@@ -29,8 +29,8 @@ function AllServices() {
 								</a> 
 							</div>
 							<div className="icon-content">
-								<h4 className="dlab-title">Web Development</h4>
-								<p>Fusce sit amet dui vitae urna tristique imperdiet. Donec eget sapien euismod, faucibus nibh non, consequat elit. Praesent sed vehicula.</p>
+								<h4 className="dlab-title">Deploy in the Cloud</h4>
+								<p>With AWS CodePipeline we can configure continuous integration and always deliver infrastructure updates. AWS CodePipeline allows you to build, test, and update deployment every time there is a change in a codebase. AWS has no upfront fees or long term contracts so you are flexible and only pay for what you use.</p>
 							</div>
 						</div>
 					</div>
@@ -42,8 +42,8 @@ function AllServices() {
 								</a> 
 							</div>
 							<div className="icon-content">
-								<h4 className="dlab-title">Web Solution</h4>
-								<p>Fusce sit amet dui vitae urna tristique imperdiet. Donec eget sapien euismod, faucibus nibh non, consequat elit. Praesent sed vehicula.</p>
+								<h4 className="dlab-title">CRM in the Cloud</h4>
+								<p>Just like Cloud Cards, our Cloud CRM allows you to support sales activity and manage customers or clients in an AWS Cloud. With Cloud CRM solutions, there is no need to share your client’s database with CRM providers because all the data is stored on your AWS account under your full control and watchful eye.</p>
 							</div>
 						</div>
 					</div>
@@ -55,8 +55,8 @@ function AllServices() {
 								</a> 
 							</div>
 							<div className="icon-content">
-								<h4 className="dlab-title">Company Branding</h4>
-								<p>Fusce sit amet dui vitae urna tristique imperdiet. Donec eget sapien euismod, faucibus nibh non, consequat elit. Praesent sed vehicula.</p>
+								<h4 className="dlab-title">Build in the Cloud</h4>
+								<p>Build and test your apps with continuous scaling whilst only paying for the build time you use. We can help you manage build services that compile source code, runs tests, and produces software packages. With AWS CodeBuild, there’s no need for equipment, managing and scale build servers.</p>
 							</div>
 						</div>
 					</div>
@@ -68,8 +68,8 @@ function AllServices() {
 								</a> 
 							</div>
 							<div className="icon-content">
-								<h4 className="dlab-title">SEO & Marketing</h4>
-								<p>Fusce sit amet dui vitae urna tristique imperdiet. Donec eget sapien euismod, faucibus nibh non, consequat elit. Praesent sed vehicula.</p>
+								<h4 className="dlab-title">Tasks in the Cloud</h4>
+								<p>Our Cloud Cards product allows you to deploy a Serverless app on the AWS account you manage. It also has all the same features of Trello and Asana, but has the added advantage of no monthly fees which means that you only pay for what you use. The product was built only using best practices of Serverless architecture, which means it is secure, safe and resilient by default. Also all the data is stored on the premise you control in an AWS DynamoDB tables.</p>
 							</div>
 						</div>
 					</div>

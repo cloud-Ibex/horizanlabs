@@ -1,44 +1,60 @@
-
-
-import Footer from '../layout/footer';
-import Header from '../layout/header-3';
+import Footer from "../layout/footer";
+import Header from "../layout/header-3";
 import { useState } from "react";
-import AllServices from '../element/all-services';
-import Team from '../element/team';
-import Testimonial from '../element/testimonial';
-import Link from 'next/link';
-import Quote from '../element/quote';
-
+import AllServices from "../element/all-services";
+import Team from "../element/team";
+import Testimonial from "../element/testimonial";
+import Link from "next/link";
+import Quote from "../element/quote";
 
 function Services1() {
-    const [open, setOpen] = useState("p2")
+  const [open, setOpen] = useState("p2");
   return (
     <>
-    <Header/>
-    <div className="page-content bg-white">
-		{/* <!-- Banner  --> */}
-		<div className="dlab-bnr-inr overlay-primary-dark" style={{"backgroundImage":"url(images/banner/bnr1.jpg)"}}>
-			<div className="container">
-				<div className="dlab-bnr-inr-entry">
-					<h1>Services 1</h1>
-					{/* <!-- Breadcrumb Row --> */}
-					<nav aria-label="breadcrumb" className="breadcrumb-row">
-						<ul className="breadcrumb">
-							<li className="breadcrumb-item"><Link href="/"><a>Home</a></Link></li>
-							<li className="breadcrumb-item active" aria-current="page">Services</li>
-						</ul>
-					</nav>
-					{/* <!-- Breadcrumb Row End --> */}
-				</div>
-			</div>
-		</div>
-		{/* <!-- Banner End --> */}
-		
-		{/* <!-- Services --> */}
-		<AllServices/>
-		
-		{/* <!-- Newsletter --> */}
-		{/* <section className="content-inner-3 bg-primary" style={{"backgroundImage":"url(images/background/bg13.png)","backgroundRepeat":"no-repeat","backgroundSize":"cover"}}>
+      <Header />
+      <div className="page-content bg-white">
+        {/* <!-- Banner  --> */}
+        <div
+          className="dlab-bnr-inr overlay-primary-dark"
+          style={{ backgroundImage: "url(images/banner/bnr1.jpg)" }}
+        >
+          <div className="container">
+            <div className="dlab-bnr-inr-entry">
+              <h1>Process Assistance</h1>
+              <p class="text-white">
+                We gratefully respect the business process teams can have and
+                are ready to give you our support combining all the benefits of
+                Cloud solutions, without compromising the way everyday business
+                runs in your company. As a tech company you need to manage
+                source code, build and deliver it to the cloud. Our custom
+                Serverless solutions allow you to manage all the tasks in a
+                cloud and do sales via a Serverless CRM system, and because this
+                is Serverless, you only ever pay for what you use.
+              </p>
+              {/* <!-- Breadcrumb Row --> */}
+              <nav aria-label="breadcrumb" className="breadcrumb-row">
+                <ul className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Services
+                  </li>
+                </ul>
+              </nav>
+              {/* <!-- Breadcrumb Row End --> */}
+            </div>
+          </div>
+        </div>
+        {/* <!-- Banner End --> */}
+
+        {/* <!-- Services --> */}
+        <AllServices />
+
+        {/* <!-- Newsletter --> */}
+        {/* <section className="content-inner-3 bg-primary" style={{"backgroundImage":"url(images/background/bg13.png)","backgroundRepeat":"no-repeat","backgroundSize":"cover"}}>
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -69,9 +85,9 @@ function Services1() {
 				</div>
 			</div>
 		</section>	 */}
-		
-		{/* <!-- Fetures --> */}
-		{/* <section className="content-inner-2">
+
+        {/* <!-- Fetures --> */}
+        {/* <section className="content-inner-2">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-xl-6 col-lg-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -129,18 +145,18 @@ function Services1() {
 				</div>
 			</div>
 		</section> */}
-		
-		{/* <!-- Team --> */}
-		{/* <Team/> */}
-		
-		{/* <!-- Testimonials --> */}
-		{/* <Testimonial/> */}
-		
-		{/* <!-- Get A Quote --> */}
-		{/* <Quote/> */}
-		
-		{/* <!-- Call To action --> */}
-		{/* <section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
+
+        {/* <!-- Team --> */}
+        {/* <Team/> */}
+
+        {/* <!-- Testimonials --> */}
+        {/* <Testimonial/> */}
+
+        {/* <!-- Get A Quote --> */}
+        {/* <Quote/> */}
+
+        {/* <!-- Call To action --> */}
+        {/* <section style={{"backgroundImage":"url(images/background/bg5.jpg)","backgroundSize":"cover"}}>
 			<div className="container">
 				<div className="row action-box style-1 align-items-center">
 					<div className="col-xl-7 col-lg-8 col-md-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -157,11 +173,10 @@ function Services1() {
 				</div>
 			</div>
 		</section> */}
-		
-	</div>
-    <Footer/>
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default Services1;

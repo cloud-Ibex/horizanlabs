@@ -9,7 +9,7 @@ function Footer() {
             <div className="container">
 				<div className="footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
 					<div className="row align-items-center">
-						<div className="col-xl-6 col-md-4">
+						<div className="col-xl-3 col-md-2">
 							<div className="footer-logo">
 								<a href="/"><img src="images/arsol-white.png" alt=""/></a> 
 							</div>

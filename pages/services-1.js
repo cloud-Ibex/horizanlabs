@@ -2,10 +2,10 @@ import Footer from "../layout/footer";
 import Header from "../layout/header-3";
 import { useState } from "react";
 import AllServices from "../element/all-services";
-import Team from "../element/team";
-import Testimonial from "../element/testimonial";
+// import Team from "../element/team";
+// import Testimonial from "../element/testimonial";
 import Link from "next/link";
-import Quote from "../element/quote";
+// import Quote from "../element/quote";
 
 function Services1() {
   const [open, setOpen] = useState("p2");
@@ -20,18 +20,7 @@ function Services1() {
         >
           <div className="container">
             <div className="dlab-bnr-inr-entry">
-              <h1>Process Assistance</h1>
-              <p class="text-white">
-                We gratefully respect the business process teams can have and
-                are ready to give you our support combining all the benefits of
-                Cloud solutions, without compromising the way everyday business
-                runs in your company. As a tech company you need to manage
-                source code, build and deliver it to the cloud. Our custom
-                Serverless solutions allow you to manage all the tasks in a
-                cloud and do sales via a Serverless CRM system, and because this
-                is Serverless, you only ever pay for what you use.
-              </p>
-              {/* <!-- Breadcrumb Row --> */}
+              <h2 class="text-white">Process Assistance</h2>={/* <!-- Breadcrumb Row --> */}
               <nav aria-label="breadcrumb" className="breadcrumb-row">
                 <ul className="breadcrumb">
                   <li className="breadcrumb-item">
